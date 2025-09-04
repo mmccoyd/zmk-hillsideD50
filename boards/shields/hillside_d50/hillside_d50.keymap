@@ -33,58 +33,64 @@
 // // Need to also ensure normal layers don't use smart LED key codes, such as by commenting them all out.
 // // col 0         1               2                 3                4              5
 //         test_layer { bindings = <
-// &kp  TAB        &kp  Q          &kp  W            &kp  E           &kp  R         &kp  T                                                          &kp  Y        &kp  U         &kp  I            &kp  O           &kp  P           &kp  LBKT
-// &bl  BL_TOG     &bl  BL_CYCLE   &kp  S            &ext_power EP_ON &out OUT_USB   &out OUT_BLE                                                    &out OUT_BLE  &out OUT_USB   &ext_power EP_ON  &kp  L           &bl  BL_CYCLE    &bl  BL_TOG
-// &kp  N0         &kp  N1         &kp  N2           &kp  N3          &kp  N4        &kp  N5        &kp  N1   &kp  N2            &kp  N2   &kp  N1   &kp  N5       &kp  N4        &kp  N3           &kp  N2          &kp  N1          &kp  N0
-//                                 &kp  X            &kp  C                          &kp  N5        &kp  N4   &kp  N3            &kp  N3   &kp  N4   &kp  N5                      &kp  COMMA        &kp  DOT
+// &kp  TAB        &kp  Q          &kp  W            &kp  E           &kp  R         &kp  T      &kp  Y        &kp  U         &kp  I            &kp  O           &kp  P           &kp  LBKT
+// &bl  BL_TOG     &bl  BL_CYCLE   &kp  S            &ext_power EP_ON &out OUT_USB   &out OUT    &out OUT_BLE  &out OUT_USB   &ext_power EP_ON  &kp  L           &bl  BL_CYCLE    &bl  BL_TOG
+// &kp  N0         &kp  N1         &kp  N2           &kp  N3          &kp  N4        &kp  N5                  &kp  N5       &kp  N4        &kp  N3           &kp  N2          &kp  N1          &kp  N0
+//                                 &kp  X            &kp  C              &kp  N1   &kp  N2            &kp  N2   &kp  N1     &kp  COMMA        &kp  DOT
+//                                                 &kp  N5        &kp  N4   &kp  N3            &kp  N3   &kp  N4   &kp  N5
 //                          >; };
 
 // // Build test layer, if using the smart RGB LEDs.
 // // Need to also ensure normal layers don't use bare LED key codes, such as by commenting them all out.
 // // col 0         1               2                 3                4              5
 //         test_layer { bindings = <
-// &kp  TAB        &kp  Q          &kp  W            &kp  E           &kp  R         &kp  T                                                          &kp  Y        &kp  U         &kp  I            &kp  O           &kp  P           &kp  LBKT
-// &rgb_ug RGB_ON  &rgb_ug RGB_BRI &rgb_ug RGB_OFF   &ext_power EP_ON &out OUT_USB   &out OUT_BLE                                                    &out OUT_BLE  &out OUT_USB   &ext_power EP_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_BRI  &rgb_ug RGB_ON
-// &kp  N0         &kp  N1         &kp  N2           &kp  N3          &kp  N4        &kp  N5        &kp  N1   &kp  N2            &kp  N2   &kp  N1   &kp  N5       &kp  N4        &kp  N3           &kp  N2          &kp  N1          &kp  N0
-//                                 &kp  X            &kp  C                          &kp  N5        &kp  N4   &kp  N3            &kp  N3   &kp  N4   &kp  N5                      &kp  COMMA        &kp  DOT
+// &kp  TAB        &kp  Q          &kp  W            &kp  E           &kp  R         &kp  T      &kp  Y        &kp  U         &kp  I            &kp  O           &kp  P           &kp  LBKT
+// &rgb_ug RGB_ON  &rgb_ug RGB_BRI &rgb_ug RGB_OFF   &ext_power EP_ON &out OUT_USB   &out OUT    &out OUT_BLE  &out OUT_USB   &ext_power EP_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_BRI  &rgb_ug RGB_ON
+// &kp  N0         &kp  N1         &kp  N2           &kp  N3          &kp  N4        &kp  N5                  &kp  N5       &kp  N4        &kp  N3           &kp  N2          &kp  N1          &kp  N0
+//                                 &kp  X            &kp  C              &kp  N1   &kp  N2            &kp  N2   &kp  N1     &kp  COMMA        &kp  DOT
+//                                                 &kp  N5        &kp  N4   &kp  N3            &kp  N3   &kp  N4   &kp  N5
 //                          >; };
 
         default_layer {
             display-name = "Base";
             bindings = <
-&kp  GRAVE    &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                                      &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  BSPC
-&kp  TAB      &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                                                      &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  ENTER
-&kp  LSHFT    &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  LCTRL    &kp  SQT            &kp  ESC      &kp  LALT     &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  RSHFT
-                            &kp  LEFT     &kp  RIGHT                  &kp  LGUI     &sk  LSHIFT   &mo  NAV_L          &mo  SYM_L    &kp  SPACE    &kp  C_MUTE                 &kp  UP       &kp  DOWN
+&kp  GRAVE    &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                  &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  BSPC
+&kp  TAB      &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                  &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  ENTER
+&kp  LSHFT    &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B                  &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  RSHFT
+                            &kp  LEFT     &kp  RIGHT      &kp  LCTRL    &kp  SQT            &kp  ESC      &kp  LALT       &kp  UP       &kp  DOWN
+                                            &kp  LGUI     &sk  LSHIFT   &mo  NAV_L          &mo  SYM_L    &kp  SPACE    &kp  C_MUTE
                         >;
                 };
         nav_layer {
             display-name = "Nav";
             bindings = <
-&kp  Copy     &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                                                                     &kp   N6      &kp  N7       &kp   N8      &kp   N9      &kp  N0       &trans
-&kp  Cut      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  Paste                                                                  &kp   HOME    &kp  LEFT     &kp   UP      &kp   DOWN    &kp  RIGHT    &kp  END
-&trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &mo  ADJ_L    &none               &none         &kp  DOT      &kp   F6      &kp  F7       &kp   F8      &kp   F9      &kp  F10      &trans
-                            &kp  Undo     &kp  Redo                   &none         &none         &trans              &mo ADJ_L     &trans        &kp   COMMA                 &kp   PG_UP   &kp   PG_DN 
+&kp  Copy     &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                 &kp   N6      &kp  N7       &kp   N8      &kp   N9      &kp  N0       &trans
+&kp  Cut      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  Paste              &kp   HOME    &kp  LEFT     &kp   UP      &kp   DOWN    &kp  RIGHT    &kp  END
+&trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5                 &kp   F6      &kp  F7       &kp   F8      &kp   F9      &kp  F10      &trans
+                            &kp  Undo     &kp  Redo       &mo  ADJ_L    &none               &none         &kp  DOT        &kp   PG_UP   &kp   PG_DN 
+                                            &none         &none         &trans              &mo ADJ_L     &trans        &kp   COMMA
                         >;
                 };
 
         sym_layer {
             display-name = "Sym";
             bindings = <
-&kp  ESC      &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &kp  DEL
-&caps_word    &kp  BSLH     &kp  MINUS    &kp  EQUAL    &kp  LBKT     &kp  RBKT                                                                   &kp C_VOL_UP  &kp  RSHFT    &kp  RCTRL    &kp  LALT     &kp  RGUI     &kp  INS
-&kp CAPSLOCK  &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &key_repeat   &none               &none         &mo  ADJ_L    &kp C_VOL_DN  &kp  C_MUTE   &kp  C_PP     &kp  SQT      &kp  DQT      &none
-                            &kp  F11      &kp  F12                    &none         &none         &mo  ADJ_L          &trans        &none         &none                       &kp  K_APP    &sk  RALT
+&kp  ESC      &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT            &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &kp  DEL
+&caps_word    &kp  BSLH     &kp  MINUS    &kp  EQUAL    &kp  LBKT     &kp  RBKT               &kp C_VOL_UP  &kp  RSHFT    &kp  RCTRL    &kp  LALT     &kp  RGUI     &kp  INS
+&kp CAPSLOCK  &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC               &kp C_VOL_DN  &kp  C_MUTE   &kp  C_PP     &kp  SQT      &kp  DQT      &none
+                            &kp  F11      &kp  F12        &key_repeat   &none               &none         &mo  ADJ_L      &kp  K_APP    &sk  RALT
+                                            &none         &none         &mo  ADJ_L          &trans        &none         &none
                         >;
                 };
 
         adj_layer {
             display-name = "Adjust";
             bindings = <
-&none         &none         &out OUT_BLE  &out OUT_USB  &none         &soft_off                                                                   &soft_off     &none         &none         &none         &none         &none
-&none         &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4                                                               &none         &none         &out OUT_USB  &out OUT_BLE  &none         &none
-&bootloader   &sys_reset    &none         &none         &none         &none         &none         &none               &none         &none         &kp PSCRN     &kp SLCK      &kp PAUSE_BREAK  &none      &sys_reset    &bootloader
-                            &bl  BL_TOG   &bl  BL_CYCLE               &bt  BT_CLR   &none         &trans              &trans        &none         &none                       &none         &none
+&none         &none         &out OUT_BLE  &out OUT_USB  &none         &soft_off               &soft_off     &none         &none         &none         &none         &none
+&none         &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4           &none         &none         &out OUT_USB  &out OUT_BLE  &none         &none
+&bootloader   &sys_reset    &none         &none         &none         &none                   &kp PSCRN     &kp SLCK      &kp PAUSE_BREAK  &none      &sys_reset    &bootloader
+                            &bl  BL_TOG   &bl  BL_CYCLE   &none         &none               &none         &none           &none         &none
+                                            &bt  BT_CLR   &none         &trans              &trans        &none         &none
                         >;
                 };
 
