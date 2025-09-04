@@ -58,12 +58,6 @@ put it all together here.
             , <&key_physical_attrs 100 100  430  200       0     0     0>
             , <&key_physical_attrs 100 100  530  200       0     0     0>
 
-            , <&key_physical_attrs 100 100  640  220       0     0     0>
-            , <&key_physical_attrs 100 100  740  220       0     0     0>
-
-            , <&key_physical_attrs 100 100  890  220       0     0     0>
-            , <&key_physical_attrs 100 100  990  220       0     0     0>
-
             , <&key_physical_attrs 100 100 1100  200       0     0     0>
             , <&key_physical_attrs 100 100 1200  200       0     0     0>
             , <&key_physical_attrs 100 100 1310  200       0     0     0>
@@ -75,6 +69,15 @@ put it all together here.
             , <&key_physical_attrs 100 100  210  300       0     0     0>
             , <&key_physical_attrs 100 100  320  300       0     0     0>
 
+            , <&key_physical_attrs 100 100  640  220       0     0     0>
+            , <&key_physical_attrs 100 100  740  220       0     0     0>
+
+            , <&key_physical_attrs 100 100  890  220       0     0     0>
+            , <&key_physical_attrs 100 100  990  220       0     0     0>
+
+            , <&key_physical_attrs 100 100 1310  300       0     0     0>
+            , <&key_physical_attrs 100 100 1420  300       0     0     0>
+
             , <&key_physical_attrs 100 100  540  320       0     0     0>
             , <&key_physical_attrs 100 100  640  320       0     0     0>
             , <&key_physical_attrs 100 100  740  320       0     0     0>
@@ -82,9 +85,6 @@ put it all together here.
             , <&key_physical_attrs 100 100  890  320       0     0     0>
             , <&key_physical_attrs 100 100  990  320       0     0     0>
             , <&key_physical_attrs 100 100 1090  320       0     0     0>
-
-            , <&key_physical_attrs 100 100 1310  300       0     0     0>
-            , <&key_physical_attrs 100 100 1420  300       0     0     0>
             ;
     };
 };
