@@ -31,24 +31,24 @@
 
 // // Build test layer, if using the bare LED.
 // // Need to also ensure normal layers don't use smart LED key codes, such as by commenting them all out.
-// // col 0         1               2                 3                4              5
+// // col 0         1               2                3                4              5
 //         test_layer { bindings = <
-// &kp  TAB        &kp  Q          &kp  W            &kp  E           &kp  R         &kp  T      &kp  Y        &kp  U         &kp  I            &kp  O           &kp  P           &kp  LBKT
-// &bl  BL_TOG     &bl  BL_CYCLE   &kp  S            &ext_power EP_ON &out OUT_USB   &out OUT    &out OUT_BLE  &out OUT_USB   &ext_power EP_ON  &kp  L           &bl  BL_CYCLE    &bl  BL_TOG
-// &kp  N0         &kp  N1         &kp  N2           &kp  N3          &kp  N4        &kp  N5                  &kp  N5       &kp  N4        &kp  N3           &kp  N2          &kp  N1          &kp  N0
-//                                 &kp  X            &kp  C              &kp  N1   &kp  N2            &kp  N2   &kp  N1     &kp  COMMA        &kp  DOT
-//                                                 &kp  N5        &kp  N4   &kp  N3            &kp  N3   &kp  N4   &kp  N5
+// &kp  TAB        &kp  Q          &kp  W           &kp  E           &kp  R         &kp  T                   &kp  Y        &kp  U         &kp  I            &kp  O           &kp  P           &kp  LBKT
+// &bl  BL_TOG     &bl  BL_CYCLE   &kp  S           &ext_power EP_ON &out OUT_USB   &out OUT                 &out OUT_BLE  &out OUT_USB   &ext_power EP_ON  &kp  L           &bl  BL_CYCLE    &bl  BL_TOG
+// &kp  N0         &kp  N1         &kp  N2          &kp  N3          &kp  N4        &kp  N5                  &kp  N5       &kp  N4        &kp  N3           &kp  N2          &kp  N1          &kp  N0
+//                                 &kp  X           &kp  C             &kp  N1        &kp  N2              &kp  N2       &kp  N1          &kp  COMMA        &kp  DOT
+//                                                    &kp  N5          &kp  N4        &kp  N3              &kp  N3       &kp  N4        &kp  N5
 //                          >; };
 
 // // Build test layer, if using the smart RGB LEDs.
 // // Need to also ensure normal layers don't use bare LED key codes, such as by commenting them all out.
-// // col 0         1               2                 3                4              5
+// // col 0         1               2               3                4              5
 //         test_layer { bindings = <
-// &kp  TAB        &kp  Q          &kp  W            &kp  E           &kp  R         &kp  T      &kp  Y        &kp  U         &kp  I            &kp  O           &kp  P           &kp  LBKT
-// &rgb_ug RGB_ON  &rgb_ug RGB_BRI &rgb_ug RGB_OFF   &ext_power EP_ON &out OUT_USB   &out OUT    &out OUT_BLE  &out OUT_USB   &ext_power EP_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_BRI  &rgb_ug RGB_ON
-// &kp  N0         &kp  N1         &kp  N2           &kp  N3          &kp  N4        &kp  N5                  &kp  N5       &kp  N4        &kp  N3           &kp  N2          &kp  N1          &kp  N0
-//                                 &kp  X            &kp  C              &kp  N1   &kp  N2            &kp  N2   &kp  N1     &kp  COMMA        &kp  DOT
-//                                                 &kp  N5        &kp  N4   &kp  N3            &kp  N3   &kp  N4   &kp  N5
+// &kp  TAB        &kp  Q          &kp  W          &kp  E           &kp  R         &kp  T                   &kp  Y        &kp  U         &kp  I            &kp  O           &kp  P           &kp  LBKT
+// &rgb_ug RGB_ON  &rgb_ug RGB_BRI &rgb_ug RGB_OFF &ext_power EP_ON &out OUT_USB   &out OUT                 &out OUT_BLE  &out OUT_USB   &ext_power EP_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_BRI  &rgb_ug RGB_ON
+// &kp  N0         &kp  N1         &kp  N2         &kp  N3          &kp  N4        &kp  N5                  &kp  N5       &kp  N4        &kp  N3           &kp  N2          &kp  N1          &kp  N0
+//                                 &kp  X          &kp  C              &kp  N1       &kp  N2              &kp  N2       &kp  N1          &kp  COMMA        &kp  DOT
+//                                                   &kp  N5           &kp  N4       &kp  N3              &kp  N3       &kp  N4        &kp  N5
 //                          >; };
 
         default_layer {
@@ -67,7 +67,7 @@
 &kp  Copy     &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                 &kp   N6      &kp  N7       &kp   N8      &kp   N9      &kp  N0       &trans
 &kp  Cut      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  Paste              &kp   HOME    &kp  LEFT     &kp   UP      &kp   DOWN    &kp  RIGHT    &kp  END
 &trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5                 &kp   F6      &kp  F7       &kp   F8      &kp   F9      &kp  F10      &trans
-                            &kp  Undo     &kp  Redo       &mo  ADJ_L    &none               &none         &kp  DOT        &kp   PG_UP   &kp   PG_DN 
+                            &kp  Undo     &kp  Redo       &mo  ADJ_L    &none               &none         &kp  DOT        &kp   PG_UP   &kp   PG_DN
                                             &none         &none         &trans              &mo ADJ_L     &trans        &kp   COMMA
                         >;
                 };
