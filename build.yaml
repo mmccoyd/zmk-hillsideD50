@@ -31,6 +31,10 @@ include:
     # cmake-args: -DCONFIG_ZMK_STUDIO=y
 
   # Right side of Dactyl 50
+  # After your initial builds,
+  # you often can comment out these lines to reduce your build CPU use in half.
+  # Keymap only changes only need t rebuild the central (left) side
+  # as it manages the keymap.
   - board: nice_nano_v2
     shield: hillside_d50_right nice_view
 

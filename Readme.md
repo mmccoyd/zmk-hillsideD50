@@ -8,9 +8,8 @@ It features:
 -   A simple QWERTY keymap using three main layers and one adjust layer. 
 -   Nice!view display and the bare LED enabled by default.
 -   [ZMK Studio](https://zmk.dev/docs/features/studio) is supported
-    but disabled.
-    If desired, it needs to be enabled in
-    [build.yaml](https://zmk.dev/docs/features/studio#building)
+    but needs to be enabled in
+    [build.yaml](https://zmk.dev/docs/features/studio#building),
     and added to the
     [keymap](https://zmk.dev/docs/features/studio#keymap-changes).
 -   A hardware testing layer that can be uncommented to enable easier one sided
