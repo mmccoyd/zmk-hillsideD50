@@ -15,6 +15,11 @@ It features:
 -   A hardware testing layer that can be uncommented to enable easier one sided
     and layer-free access to functions for hardware build testing.
 
+> [!WARNING]
+> v0.2.0 is a breaking change to the order of keys in the keymap file.
+> See the Change log and the bin/shift_thumbs script for details.
+> You can also just stay on v0.1.0, which now has a tag.
+
 The detailed keymap choices are similar to those for the
     [Hillside 52](https://github.com/mmccoyd/hillside/wiki/Hillside%2052%20Keymap)
     keymap.
